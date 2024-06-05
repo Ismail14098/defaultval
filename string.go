@@ -1,8 +1,6 @@
 package null
 
-type String struct {
-	*string
-}
+type String struct{ *string }
 
 func StringFrom(val string) String {
 	return String{&val}
