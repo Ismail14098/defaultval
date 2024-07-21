@@ -25,3 +25,7 @@ func (i Int) ValueOrDefault(def int) int {
 
 	return *i.int
 }
+
+func (i Int) Ptr() *int {
+	return i.int
+}
