@@ -25,3 +25,7 @@ func (s String) ValueOrDefault(def string) string {
 
 	return *s.string
 }
+
+func (s String) Ptr() *string {
+	return s.string
+}
